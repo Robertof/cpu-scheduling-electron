@@ -53,9 +53,11 @@
     }
   },
   "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
     "timelines-chart": "^2.6.8",
     "vue": "^2.5.16",
-    "vue-electron": "^1.0.6"
+    "vue-electron": "^1.0.6",
+    "@fortawesome/fontawesome-free": "^5.6.3"
   },
   "devDependencies": {
     "ajv": "^6.5.0",
@@ -92,10 +94,10 @@
     "mini-css-extract-plugin": "0.4.0",
     "multispinner": "^0.2.1",
     "node-loader": "^0.6.0",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.11.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^7.0.3",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "vue-html-loader": "^1.2.4",
