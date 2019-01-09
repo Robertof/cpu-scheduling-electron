@@ -53,6 +53,7 @@
     }
   },
   "dependencies": {
+    "timelines-chart": "^2.6.8",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6"
   },
