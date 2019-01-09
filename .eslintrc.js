@@ -35,6 +35,7 @@ module.exports = {
     'no-console': [
       0
     ],
+    'no-unused-vars': 'warn',
     
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
