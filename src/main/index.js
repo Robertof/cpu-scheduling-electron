@@ -23,7 +23,8 @@ function createWindow () {
     height: 563,
     useContentSize: true,
     width: 1000,
-    show: false
+    show: false,
+    backgroundColor: '#fff'
   })
 
   mainWindow.loadURL(winURL)
