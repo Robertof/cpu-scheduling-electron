@@ -53,11 +53,12 @@
     }
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
     "bootstrap-vue": "^2.0.0-rc.11",
+    "lodash-es": "^4.17.11",
     "timelines-chart": "^2.6.8",
     "vue": "^2.5.16",
-    "vue-electron": "^1.0.6",
-    "@fortawesome/fontawesome-free": "^5.6.3"
+    "vue-electron": "^1.0.6"
   },
   "devDependencies": {
     "ajv": "^6.5.0",
