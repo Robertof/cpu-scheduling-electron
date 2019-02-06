@@ -53,15 +53,11 @@
     }
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.6.3",
-    "bootstrap-css-only": "^4.2.1",
-    "lodash-es": "^4.17.11",
-    "timelines-chart": "^2.6.8",
-    "v-tooltip": "^2.0.0-rc.33",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6"
   },
   "devDependencies": {
+    "so-project-src": "Robertof/cpu-scheduling-src",
     "ajv": "^6.5.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
