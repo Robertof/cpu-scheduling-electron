@@ -1,20 +1,21 @@
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
+  //root: true,
+  //parser: 'babel-eslint',
   parserOptions: {
+    parser: 'babel-eslint',
     sourceType: 'module'
   },
   env: {
     browser: true,
     node: true
   },
-  extends: 'eslint:recommended',
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/recommended'
+  ],
   globals: {
     __static: true
   },
-  plugins: [
-    'html'
-  ],
   'rules': {
     'indent': [
       'error',
