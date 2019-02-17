@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, shell } from 'electron'
 
 /**
  * Set `__static` path to static files in production
@@ -24,14 +24,27 @@ function createWindow () {
     useContentSize: true,
     width: 1000,
     show: false,
-    backgroundColor: '#fff'
+    backgroundColor: '#343a40'
   })
 
   mainWindow.loadURL(winURL)
 
-  //if (process.env.NODE_ENV === 'development')
-  // mainWindow.showInactive()
-  mainWindow.showInactive()
+  if (process.env.NODE_ENV === 'development')
+    mainWindow.showInactive()
+  else
+    window.once('ready-to-show', () => window.show())
+
+  // Ensure external links are opened in the user's web browser.
+  const webContents = mainWindow.webContents
+  const handleRedirect = (e, url) => {
+    if (url != webContents.getURL()) {
+      e.preventDefault()
+      shell.openExternal(url)
+    }
+  }
+
+  webContents.on('will-navigate', handleRedirect)
+  webContents.on('new-window', handleRedirect)
 
   mainWindow.on('closed', () => {
     mainWindow = null
