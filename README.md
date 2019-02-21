@@ -1,25 +1,30 @@
-# so-project
+# CPU scheduling app - Electron edition
 
-> Scheduling for everyone
+![Screenshot of the app](screenshot.png)
 
-#### Build Setup
+## Synopsis
+
+This app allows to easily configure and plot processes using the following scheduling algorithms:
+
+- [First-come, first-served (FCFS)](https://en.wikipedia.org/wiki/FIFO_\(computing_and_electronics\))
+- [Shortest Job First (SJF, pre-emptive and non pre-emptive)](https://en.wikipedia.org/wiki/Shortest_job_next)
+- [Round Robin](https://en.wikipedia.org/wiki/Round-robin_scheduling)
+
+**NOTE:** since this was an university project, the app is currently only in Italian.
+
+## Building and packaging
 
 ``` bash
 # install dependencies
-npm install
+yarn
 
-# serve with hot reload at localhost:9080
-npm run dev
+# run for development
+yarn run dev
 
-# build electron application for production
-npm run build
-
-
-# lint all JS/Vue component files in `src/`
-npm run lint
-
+# build for production
+yarn run build
 ```
 
----
+## Credits
 
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[8fae476](https://github.com/SimulatedGREG/electron-vue/tree/8fae4763e9d225d3691b627e83b9e09b56f6c935) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
+Icon made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.
