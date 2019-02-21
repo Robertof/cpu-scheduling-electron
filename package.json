@@ -1,8 +1,8 @@
 {
-  "name": "so-project",
-  "version": "0.0.1",
+  "name": "cpu-scheduling-electron",
+  "version": "1.0.0",
   "author": "Roberto Frenna",
-  "description": "Scheduling for everyone",
+  "description": "Easily schedule and plot arbitrary processes using FCFS, SJF and RR.",
   "license": null,
   "main": "./dist/electron/main.js",
   "scripts": {
@@ -18,8 +18,8 @@
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js"
   },
   "build": {
-    "productName": "so-project",
-    "appId": "ovh.robertof.soproject",
+    "productName": "CPU Scheduling",
+    "appId": "ovh.robertof.cpu-scheduling",
     "directories": {
       "output": "build"
     },
