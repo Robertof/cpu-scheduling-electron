@@ -32,7 +32,7 @@ function createWindow () {
   if (process.env.NODE_ENV === 'development')
     mainWindow.showInactive()
   else
-    window.once('ready-to-show', () => window.show())
+    mainWindow.once('ready-to-show', () => mainWindow.show())
 
   // Ensure external links are opened in the user's web browser.
   const webContents = mainWindow.webContents
