@@ -10,7 +10,12 @@ This app allows to easily configure and plot processes using the following sched
 - [Shortest Job First (SJF, pre-emptive and non pre-emptive)](https://en.wikipedia.org/wiki/Shortest_job_next)
 - [Round Robin](https://en.wikipedia.org/wiki/Round-robin_scheduling)
 
+The codebase is modular and well-documented, more scheduling algorithms can be easily added.
+
 **NOTE:** since this was an university project, the app is currently only in Italian.
+
+Please checkout the [main code repository](https://github.com/Robertof/cpu-scheduling-src) and the
+[web-app](https://github.com/Robertof/cpu-scheduling-web).
 
 ## Building and packaging
 
