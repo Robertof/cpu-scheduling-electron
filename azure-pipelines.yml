@@ -25,9 +25,9 @@ steps:
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)'
     Contents: |
-      build\*.exe
-      build\*.dmg
-      build\*.snap
+      build/*.exe
+      build/*.dmg
+      build/*.snap
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
